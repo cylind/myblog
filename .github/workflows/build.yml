@@ -20,3 +20,5 @@ jobs:
       uses: shalzz/zola-deploy-action@v0.21.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPOSITORY: cylind/cylind.github.io  
+        PAGES_BRANCH: master
