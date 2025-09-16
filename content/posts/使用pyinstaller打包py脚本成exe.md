@@ -1,7 +1,6 @@
 ---
 title: 使用pyinstaller打包py脚本成exe
-tags: Python
-abbrlink: 53573
+tags: [Python]
 date: 2020-08-15 13:30:37
 ---
 

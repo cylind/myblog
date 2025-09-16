@@ -1,7 +1,6 @@
 ---
 title: Manjaro_deepin安装教程
-tags: Linux
-abbrlink: 45740
+tags: [Linux]
 date: 2020-02-03 03:19:55
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Pycharm使用技巧
-tags: Python
-abbrlink: 33736
+tags: [Python]
 date: 2020-02-26 13:05:52
 ---
 

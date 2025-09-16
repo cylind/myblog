@@ -1,7 +1,6 @@
 ---
 title: 基于Github Action自动部署Hexo
-tags: Hexo
-abbrlink: 873
+tags: [Hexo]
 date: 2021-02-04 16:45:51
 ---
 

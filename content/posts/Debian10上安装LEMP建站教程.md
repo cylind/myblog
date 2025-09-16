@@ -1,9 +1,6 @@
 ---
 title: Debian10上安装LEMP建站教程
-tags:
-  - 建站
-  - Linux
-abbrlink: 25397
+tags: [建站, Linux]
 date: 2020-10-01 17:57:10
 ---
 

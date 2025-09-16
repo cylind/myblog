@@ -1,6 +1,5 @@
 ---
 title: 使用jsdom解决用PyExecJS执行含有document、window等对象的js代码时出现的问题
-abbrlink: 61392
 date: 2020-09-17 10:40:17
 ---
 

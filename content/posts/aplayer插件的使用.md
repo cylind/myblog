@@ -1,7 +1,6 @@
 ---
 title: aplayer插件的使用
-tags: Hexo
-abbrlink: 36683
+tags: [Hexo]
 date: 2019-08-11 04:58:36
 ---
 

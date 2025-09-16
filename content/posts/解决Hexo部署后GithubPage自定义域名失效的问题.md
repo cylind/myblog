@@ -1,8 +1,7 @@
 ---
 title: 解决Hexo部署后GithubPage自定义域名失效的问题
-abbrlink: 63221
 date: 2020-05-16 22:00:23
-tags: Hexo
+tags: [Hexo]
 ---
 
 每次Hexo部署时，会把本地文件覆盖到Github上，如果是自己直接在Github上给GithubPage绑定域名的话，绑定域名生成的域名文件CNAME会被删除掉，所以会出现每次部署完Hexo后，域名就失效的情况。

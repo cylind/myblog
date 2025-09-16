@@ -1,8 +1,7 @@
 ---
 title: Markdown基本用法
-tags: Hexo
+tags: [Hexo]
 math: true
-abbrlink: 45104
 date: 2020-02-09 15:33:06
 ---
 

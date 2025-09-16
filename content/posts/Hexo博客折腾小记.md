@@ -1,8 +1,7 @@
 ---
 title: Hexo博客折腾小记
-abbrlink: 52996
 date: 2020-10-08 13:42:22
-tags: Hexo
+tags: [Hexo]
 ---
 
 ## Hexo迁移到Linux

@@ -1,7 +1,6 @@
 ---
 title: python中的变量
-tags: Python
-abbrlink: 13563
+tags: [Python]
 date: 2020-04-21 13:27:46
 ---
 

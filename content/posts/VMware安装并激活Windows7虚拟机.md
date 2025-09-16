@@ -1,7 +1,6 @@
 ---
 title: VMware安装并激活Windows7虚拟机
-tags: 虚拟机
-abbrlink: 47189
+tags: [虚拟机]
 date: 2020-02-05 22:42:54
 ---
 

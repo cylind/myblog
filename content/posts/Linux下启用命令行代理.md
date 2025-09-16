@@ -1,9 +1,6 @@
 ---
 title: Linux下启用命令行代理
-tags: 
-  - Linux
-  - 对抗封锁
-abbrlink: 46285
+tags: [Linux, 对抗封锁]
 date: 2020-05-03 11:59:50
 ---
 

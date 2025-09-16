@@ -1,7 +1,6 @@
 ---
 title: screen简易用法总结
-tags: Linux
-abbrlink: 6948
+tags: [Linux]
 date: 2020-09-27 17:28:13
 ---
 

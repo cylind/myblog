@@ -1,7 +1,6 @@
 ---
 title: html5页面嵌入
-tags: Hexo
-abbrlink: 40033
+tags: [Hexo]
 date: 2019-08-10 13:25:55
 ---
 

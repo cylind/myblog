@@ -1,6 +1,5 @@
 ---
 title: 利用PyExecJS在python中执行js函数
-abbrlink: 35005
 date: 2020-09-17 10:29:12
 ---
 

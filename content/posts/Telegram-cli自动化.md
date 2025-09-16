@@ -1,9 +1,6 @@
 ---
 title: Telegram-cli自动化
-tags:
-  - Linux
-  - 奇技淫巧
-abbrlink: 47969
+tags: [Linux, 奇技淫巧]
 date: 2020-05-08 13:06:00
 ---
 

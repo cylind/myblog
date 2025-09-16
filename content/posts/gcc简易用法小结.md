@@ -1,7 +1,7 @@
 ---
 title: gcc简易用法小结
 date: 2021-03-13 09:34:06
-tags: 计算机系统
+tags: [计算机系统]
 ---
 
 GCC, the GNU Compiler Collection，顾名思义，这是一个编译器集合。它支持多种语言的编译，比如 [C](https://gcc.gnu.org/c99status.html), [C++](https://gcc.gnu.org/projects/cxx-status.html), Objective-C, [Fortran](https://gcc.gnu.org/fortran/), Go等。

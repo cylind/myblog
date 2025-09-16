@@ -1,7 +1,7 @@
 ---
 title: multipart_fromdata请求方法的python实现
 date: 2021-02-24 02:31:10
-tags: Python
+tags: [Python]
 ---
 
 遇见这种请求方式好几次了，都是现查现用，原理啥的都不了解，用了就忘。以前觉得键值对的json/data(application/x-www-form-urlencoded)就够了，现在看来这玩意儿还挺重要的，应用挺广泛，有必要记录学习一下了。

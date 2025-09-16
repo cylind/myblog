@@ -1,7 +1,6 @@
 ---
 title: iframe嵌入视频自适应
-tags: Hexo
-abbrlink: 62577
+tags: [Hexo]
 date: 2019-08-09 21:33:46
 ---
 

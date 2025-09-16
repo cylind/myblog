@@ -1,7 +1,7 @@
 ---
 title: 修复破损locales
 date: 2021-02-08 17:44:28
-tags: Linux
+tags: [Linux]
 ---
 
 使用cleanbit清理Linux Mint系统的日志、缓存、多余的本地化语言包，忘记去设置保留中文简体，结果只剩下英文了。

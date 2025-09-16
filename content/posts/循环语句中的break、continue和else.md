@@ -1,8 +1,7 @@
 ---
 title: 循环语句中的break、continue和else
-abbrlink: 58629
 date: 2020-04-16 20:46:46
-tags: Python
+tags: [Python]
 ---
 
 python中循环语句有两大类 ，for循环和while循环。for循环常用于循环次数已知的情况，而且常常和range函数搭配使用；而while循环常用于循环次数未知的情况，利用条件判断来进行循环，只要条件为真则进行下去。

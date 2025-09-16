@@ -1,7 +1,6 @@
 ---
 title: Debian-Ubuntu定时重启
-tags: Linux
-abbrlink: 39331
+tags: [Linux]
 date: 2021-01-30 18:38:42
 ---
 

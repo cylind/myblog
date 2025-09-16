@@ -1,7 +1,7 @@
 ---
 title: 利用tmux和htop保持GoogleCloudShell会话活跃
 date: 2021-02-19 16:42:25
-tags: 奇技淫巧
+tags: [奇技淫巧]
 ---
 
 Goole Cloud Shell真是不错，配置高，性能好，唯一的缺点是会话容易断线。本文讲述一个保持GCS会话活跃的小技巧。

@@ -1,7 +1,6 @@
 ---
 title: Git使用教程
-tags: Git
-abbrlink: 8579
+tags: [Git]
 date: 2021-02-04 09:38:47
 ---
 

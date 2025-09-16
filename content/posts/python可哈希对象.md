@@ -1,7 +1,6 @@
 ---
 title: python可哈希对象
-tags: Python
-abbrlink: 36300
+tags: [Python]
 date: 2020-04-16 20:45:38
 ---
 

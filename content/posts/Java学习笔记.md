@@ -1,7 +1,6 @@
 ---
 title: JAVA学习笔记
-tags: JAVA
-abbrlink: 48651
+tags: [JAVA]
 date: 2019-08-08 15:12:52
 ---
 

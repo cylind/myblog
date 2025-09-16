@@ -1,9 +1,6 @@
 ---
 title: 利用nginx搭建文件服务器
-tags:
-  - vps
-  - 奇技淫巧
-abbrlink: 42784
+tags: [vps, 奇技淫巧]
 date: 2020-06-13 14:01:23
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: html学习笔记
-tags: HTML
-abbrlink: 50736
+tags: [HTML]
 date: 2019-08-13 02:03:50
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Debian&Ubuntu服务器初始化配置
-tags: Linux
-abbrlink: 19842
+tags: [Linux]
 date: 2020-10-13 12:55:25
 ---
 

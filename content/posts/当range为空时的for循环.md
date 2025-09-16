@@ -1,8 +1,7 @@
 ---
 title: 当range为空时的for循环
-abbrlink: 47430
 date: 2020-04-16 20:49:46
-tags: Python
+tags: [Python]
 
 ---
 
