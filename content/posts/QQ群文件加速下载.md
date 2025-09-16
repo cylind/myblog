@@ -12,7 +12,7 @@ date: 2020-02-09 14:07:55
 ## 方法一：转发至个人账户后下载
 
 很简单，右键转发给好友，转发后再点击下载，速度就会快很多，如果你用的是办公版QQ（TIM），TIM还有专属加速通道，一般可以跑满带宽。效果如下图：
-![](../images/QQ群文件加速下载/2.png)
+![](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/2.png)
 我们校园网做了限速处理，最快只有这么快了。
 
 ## 方法二：网页QQ群空间+IDM

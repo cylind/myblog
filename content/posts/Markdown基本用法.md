@@ -27,12 +27,12 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 ` *text*`
 *text*
 
-###  加粗
+### 加粗
 
 `**text**`
 **text**
 
-###  倾斜加粗 
+### 倾斜加粗
 
 `***text***`
 ***text***
@@ -40,6 +40,7 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 ### 字体高亮
 
 注意等号后面不要接空格。markdown语法下的高亮以及上下标功能在这个博客上没有显示出来，实际上本地Markdown软件是可以显示出来的。
+
 ```
 markdown语法：
 ==字体高亮==
@@ -91,10 +92,10 @@ H<sub>2</sub>O
 ```
 
 > text
+> 
 > > sub_text
-> >
+> > 
 > > > more_text
-
 
 ### 分割线
 
@@ -111,42 +112,45 @@ H<sub>2</sub>O
 ` ![图片底部要显示的文本](link "图片标题")`  其中的link可以是超链接也可以是本地文件路径，绝对路径相、对路径都可以。
 
 ```
- ![Markdown基本语法](https://upload-images.jianshu.io/upload_images/643065-907bae9afdec50d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp "markdown语法表")
+ ![Markdown基本语法](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/643065-907bae9afdec50d7.png  "markdown语法表")
 ```
 
-  ![Markdown基本语法](https://upload-images.jianshu.io/upload_images/643065-907bae9afdec50d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp "markdown语法表")
+  ![Markdown基本语法](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/643065-907bae9afdec50d7.png "markdown语法表")
 
 ### 插入链接
 
 ` [text](link)`
+
 ```
 [🔗简书markdown语法](https://www.jianshu.com/p/191d1e21f7ed)
 ```
+
 [🔗简书markdown语法](https://www.jianshu.com/p/191d1e21f7ed)
 
 ### 插入代码
 
 代码块下面复制粘贴的话还是当作代码块处理
 
-### 插入表格 
+### 插入表格
 
-  ```markdown
-  表头|表头|表头
-  ---|:--:|---:
-  内容|内容|内容
-  内容|内容|内容
-  
-  第二行分割表头和内容。
-  - 有一个就行，为了对齐，多加了几个
-  文字默认居左
-  -两边加：表示文字居中
-  -右边加：表示文字居右
-  注：原生的语法两边都要用 |包起来。此处省略
-  ```
-| 表头 | 表头 | 表头 |
-| ---- | :--: | ---: |
-| 内容 | 内容 | 内容 |
-| 内容 | 内容 | 内容 |
+```markdown
+表头|表头|表头
+---|:--:|---:
+内容|内容|内容
+内容|内容|内容
+
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 |包起来。此处省略
+```
+
+| 表头  | 表头  | 表头  |
+| --- |:---:| ---:|
+| 内容  | 内容  | 内容  |
+| 内容  | 内容  | 内容  |
 
 ### 插入列表
 
@@ -209,7 +213,6 @@ $$
 ### 各类图表
 
 流程图
-
 
 ```flow
 st=>start: Start
