@@ -34,7 +34,7 @@ make
 
 这一步可能会出问题，如果在执行`./configure` 时报错`zlib error`, 则应通过安装zlib依赖来解决:
 
-```
+```bash
 sudo apt install zlib1g-dev
 ```
 
@@ -48,7 +48,7 @@ sudo apt install libssl1.0-dev
 
 可通过执行如下代码启动Telegram-cli客户端，注意，要在科学上网环境下执行！
 
-```
+```bash
 bin/telegram-cli -k tg-server.pub
 ```
 
@@ -70,7 +70,7 @@ help # 更多用法直接输入help
 
 利用Linux下的crontab设置如下定时任务，可完成定时发消息的任务
 
-```
+```bash
 telegram-cli_PATH/bin/telegram-cli -W -e "msg <peer> sometext"
 ```
 

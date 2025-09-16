@@ -36,7 +36,7 @@ ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu
 StrictNodes 1
 ```
 
-```
+```ini
 # 利用meek插件直连tor的配置
 DataDirectory ./Data
 GeoIPFile ./Data/geoip
@@ -86,7 +86,7 @@ systemctl enable tor
 
 验证tor是否链接成功（安装tor的同时一般会默认附带安装了torsocks）
 
-```
+```bash
 torsocks curl myip.ipip.net
 ```
 

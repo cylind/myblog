@@ -15,7 +15,7 @@ date: 2020-06-13 14:01:23
 
 修改/etc/nginx/conf.d下的conf文件，没有的话，新建一个，在里面加入一个server，内容如下：
 
-```
+```nginx
 server {
     ### 文件服务器
     listen       8090;

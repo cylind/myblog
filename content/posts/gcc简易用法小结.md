@@ -37,7 +37,7 @@ gcc hello.c
 
 ### 预处理
 
-```
+```bash
 gcc -E hello.c -o hello.i
 ```
 
@@ -59,7 +59,7 @@ gcc -E hello.c -o hello.i
 
 ### 编译
 
-```
+```bash
 gcc -S hello.i -o hello.s
 ```
 
@@ -75,7 +75,7 @@ gcc -S hello.i -o hello.s
 
 ### 汇编
 
-```
+```bash
 gcc -c hello.s -o hello.o
 ```
 
@@ -97,7 +97,7 @@ gcc -c hello.s -o hello.o
 
 ### 链接
 
-```
+```bash
 gcc hello.o -o hello
 ```
 

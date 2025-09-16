@@ -61,14 +61,14 @@ $ git commit -m "first commit"
 
 创建一个新分支并切换到该分支
 
-```
+```bash
 git branch bugfix
 git checkout bugfix
 ```
 
 还可以直接合并简化成一条命令
 
-```
+```bash
 git checkout -b bugfix
 ```
 
@@ -173,7 +173,7 @@ $ git pull <repository> <refspec>...
 
 如果远程数据库和本地数据库的同一个地方都发生了修改的情况下，因为无法自动判断要选用哪一个修改，所以就会发生冲突。
 
-![冲突](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/01.png)
+![冲突](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/git-conflict.png)
 
 ==分割线上方是本地数据库的内容, 下方是远程数据库的内容。
 

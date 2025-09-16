@@ -43,7 +43,7 @@ gpg --import signing-key.asc
 
 如果，没下载有拥有者的公钥，那么，先执行
 
-```
+```bash
 gpg --verify file.ext.asc
 ```
 
@@ -55,7 +55,7 @@ gpg --search-keys 3DBDC284
 
 其次，验证公钥
 
-```
+```bash
 gpg --fingerprint 3DBDC284
 ```
 

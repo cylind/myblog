@@ -30,7 +30,7 @@ sudo bash go.sh
 
 开启和关闭v2ray的简单指令如下：
 
-```
+```bash
 service v2ray start
 service v2ray stop
 service v2ray restart
@@ -47,7 +47,7 @@ v2ray的配置文件是 `/etc/v2ray/config.json` , 可以参照网上的教程�
 
 
 
-```
+```bash
 git clone https://github.com/shadowsocksr/shadowsocksr.git
 ```
 
@@ -55,7 +55,7 @@ git clone https://github.com/shadowsocksr/shadowsocksr.git
 
 最后，初始化配置：
 
-```
+```bash
 bash initcfg.sh
 ```
 
@@ -78,13 +78,13 @@ bash initcfg.sh
 
 然后，切换到shadowsocks目录，会发现一个local.py文件，在这个目录下执行:
 
-```
+```bash
 python local.py -d start
 ```
 
 验证一下，是否已经成功了：
 
-```
+```bash
 curl --socks5-hostname 127.0.0.1:1081 www.google.com
 ```
 
@@ -96,7 +96,7 @@ curl --socks5-hostname 127.0.0.1:1081 www.google.com
 
 ubuntu下直接安装即可:
 
-```
+```bash
 sudo apt install proxychains
 ```
 
@@ -108,7 +108,7 @@ socks5 127.0.0.1:1080
 
 使用起来很简单，只需要在需要执行的命令前加上`proxychains` 即可，如：
 
-```
+```bash
 proxychains wget https://www.google.com
 ```
 

@@ -16,7 +16,7 @@ aplayer 提供了一个不错的解决办法，[hexo-tag-aplayer](https://github
 
 ## 安装
 
-```
+```bash
 npm install --save hexo-tag-aplayer
 ```
 
@@ -29,13 +29,13 @@ npm install --save hexo-tag-aplayer
 
 ### 直接使用办法
 
-```
+```bash
 {% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}
 ```
 
 注：此方法不支持一键调用资源，需要手动获取链接后填写，或者开启 Hexo 的 [文章资源文件夹](https://hexo.io/zh-cn/docs/asset-folders.html#文章资源文件夹) 功能，将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：
 
-```
+```bash
 {% aplayer "Caffeine" "Jeff Williams" "caffeine.mp3" "picture.jpg" "lrc:caffeine.txt" %}
 ```
 
@@ -49,17 +49,17 @@ npm install --save hexo-tag-aplayer
 
 如果使用 MetingJS，请在 Hexo 配置文件 `_config.yml` 中设置：
 
-```
+```yaml
 aplayer:  meting: true
 ```
 
 接着就可以通过 **{**% meting …%**}** 在文章中使用 MetingJS 播放器了：
 
-```
+```bash
 <!-- 简单示例 (id, server, type)  -->{% meting "108138" "netease" "song" %}
 ```
 
-```
+```bash
 <!-- 进阶示例 -->{% meting "11100236" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 ```
 
@@ -85,7 +85,7 @@ aplayer:  meting: true
 
 若在 Hexo 中使用了 PJAX，可能需要自己手动清理 APlayer 全局实例：
 
-```
+```javascript
 $(document).on('pjax:start', function () {    if (window.aplayers) {        for (let i = 0; i < window.aplayers.length; i++) {            window.aplayers[i].destroy();        }        window.aplayers = [];    }});
 ```
 
@@ -93,7 +93,7 @@ $(document).on('pjax:start', function () {    if (window.aplayers) {        for 
 
 在 Hexo 配置文件 `_config.yml` 中配置：
 
-```
+```yaml
 aplayer:  script_dir: some/place                        # Public 目录下脚本目录路径，默认: 'assets/js'  style_dir: some/place                         # Public 目录下样式目录路径，默认: 'assets/css'  cdn: http://xxx/aplayer.min.js                # 引用 APlayer.js 外部 CDN 地址 (默认不开启)  style_cdn: http://xxx/aplayer.min.css         # 引用 APlayer.css 外部 CDN 地址 (默认不开启)  meting: true                                  # MetingJS 支持  meting_api: http://xxx/api.php                # 自定义 Meting API 地址  meting_cdn: http://xxx/Meing.min.js           # 引用 Meting.js 外部 CDN 地址 (默认不开启)  asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启  externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同
 ```
 
@@ -107,7 +107,7 @@ aplayer:  script_dir: some/place                        # Public 目录下脚本
 
 如果遇到这类问题，请直接将参数用双引号括起来使用，如下所示：
 
-```
+```bash
 {% aplayer "Caffeine" "Jeff Williams" "caffeine.mp3" "autoplay" "width:70%" "lrc:caffeine.txt" %}
 ```
 
@@ -116,7 +116,7 @@ aplayer:  script_dir: some/place                        # Public 目录下脚本
 (5.10 以上版本的 hexo 不存在此问题)
 本插件通过 `after_render:html`过滤器 , 将 `APlayer.js` 和 `Meting.js` 插入到使用了本插件标签 的 HTML 文件中:
 
-```
+```html
 <html>  <head>    ...    <script src="assets/js/aplayer.min.js"></script>    <script src="assets/js/meting.min.js"></script>  </head>  ...</html>
 ```
 
@@ -129,8 +129,8 @@ aplayer:  script_dir: some/place                        # Public 目录下脚本
 
 如果想完全解决这个问题，用户可能需要自己在主题文件中手动加入 `Aplayer.js` 与 `Meting.js`，同时关闭插件的自动脚本插入功能：
 
-```
-aplayer:  
+```yaml
+aplayer:
   asset_inject: false
 ```
 

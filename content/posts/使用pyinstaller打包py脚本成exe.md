@@ -25,7 +25,7 @@ Windows下，打开命令行，执行pip install PyInstaller命令即可。在wi
 
 ## pyinstaller打包
 
-```
+```bash
 pyinstaller -F test.py
 ```
 

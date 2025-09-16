@@ -40,7 +40,7 @@ sudo npm install hexo-cli
 
 最后，将Hexo文件夹复制（或移动）到Linux操作系统可访问的文件夹下，并在该文件夹下执行如下命令即可
 
-```
+```bash
 npm install
 ```
 
@@ -59,13 +59,13 @@ git clone https://github.com/next-theme/hexo-theme-next
 
 3. 修改Hexo的_config.yml配置文件，切换主题为新下载的主题
 
-   ```
+   ```yaml
    theme: next8.0.1
    ```
 
 4. 本地调试
 
-   ```
+   ```bash
    hexo g && hexo s
    ```
 

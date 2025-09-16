@@ -86,25 +86,25 @@ sudo mariadb
 
 然后，开始创建一个名为userdb的数据库
 
-```
+```sql
 CREATE DATABASE userdb DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ```
 
 接着，把这个数据的权限授予一个用户管理，这里设置用户名wordpress_user,对应密码设置为password
 
-```
+```sql
 GRANT ALL ON userdb.* TO 'user'@'localhost' IDENTIFIED BY 'password';
 ```
 
 最后，刷新权限
 
-```
+```sql
 FLUSH PRIVILEGES;
 ```
 
 退出MariaDB：
 
-```
+```sql
 EXIT;
 ```
 
@@ -114,7 +114,7 @@ EXIT;
 
 到官网http://typecho.org/download下载最新版，解压并放到/var/www/your_domain文件夹，并更改所有者：
 
-```
+```bash
 chown -R www-data:www-data /var/www/your_domain
 ```
 
@@ -124,7 +124,7 @@ chown -R www-data:www-data /var/www/your_domain
 
 不同的模板要求不同的PHP插件，具体看文档要求
 
-```
+```bash
 sudo apt install php-curl php-mbstring php-xmlrpc
 ```
 
@@ -255,7 +255,7 @@ nano /var/www/your_domain/wp-config.php
 
 继续查找，修改数据名称，密码：
 
-```
+```php
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
@@ -267,7 +267,7 @@ define('DB_PASSWORD', 'password');
 
 此外，还要在这个文件加上两行说明，指定wordpress对文件系统操作方式，禁用连接脚本（不加这个参数的话，使用在digitalocean生成wordpress的nginx配置文件，会使得wordpress后台无法操作），这两行参数可加在任意处。
 
-```
+```php
 define('FS_METHOD', 'direct');
 define( 'CONCATENATE_SCRIPTS', false );
 ```

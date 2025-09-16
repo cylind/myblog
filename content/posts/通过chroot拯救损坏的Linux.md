@@ -17,32 +17,32 @@ date: 2020-11-01 15:41:50
 
 切换到root
 
-```
+```bash
 sudo -i
 ```
 
 查看Linux分区位置
 
-```
+```bash
 fdisk -l
 ```
 
 挂载Linux分区到/mnt目录
 
-```
+```bash
 # 假设linux分区为/dev/sda
 mount /dev/sda /mnt
 ```
 
 挂载其它必要环境或设备
 
-```
+```bash
 for i in /dev /dev/pts /proc /sys /run;do mount -B $i /mnt$i;done
 ```
 
 ### chroot并修复
 
-```
+```bash
 chroot /mnt
 ```
 

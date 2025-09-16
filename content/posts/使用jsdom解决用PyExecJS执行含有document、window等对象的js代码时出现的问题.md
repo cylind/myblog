@@ -8,7 +8,7 @@ date: 2020-09-17 10:40:17
 
 首先，全局安装jsdom，并获取安装路径。
 
-```
+```bash
 npm i jsdom -g
 npm root -g
 ```
@@ -26,7 +26,7 @@ XMLHttpRequest = window.XMLHttpRequest;
 
 最后，指定jsom路径并执行js代码。
 
-```
+```python
 js = execjs.compile(js_text,cwd=r'C:\Users\w001\AppData\Roaming\npm\node_modules')
 result = js.call(function_name,arg_1,arg_2,...,arg_n)
 ```
@@ -35,7 +35,7 @@ result = js.call(function_name,arg_1,arg_2,...,arg_n)
 
 首先，安装atob依赖。
 
-```
+```bash
 npm i atob -g
 ```
 

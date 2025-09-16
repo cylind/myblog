@@ -94,13 +94,13 @@ ufw enable
 
 查看是否已开启BBR：
 
-```
+```bash
 sysctl net.ipv4.tcp_available_congestion_control
 ```
 
 如果没有则开启BBR：
 
-```
+```bash
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
@@ -108,7 +108,7 @@ sysctl -p
 
 ### 调整swap大小
 
-```
+```bash
 wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 ```
 
@@ -118,25 +118,25 @@ wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 
 安装oh-my-zsh
 
-```
+```bash
 wget https://cdn.jsdelivr.net/gh/ohmyzsh/ohmyzsh/tools/install.sh && bash install.sh
 ```
 
 添加自动补全插件：
 
-```
+```bash
 git clone https://github.com.cnpmjs.org/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 添加语法高亮插件：
 
-```
+```bash
 git clone https://github.com.cnpmjs.org/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 修改配置文件`~/.zshrc`,修改主题及插件：
 
-```
+```bash
 ZSH_THEME="ys"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
@@ -153,7 +153,7 @@ sh <(curl https://j.mp/spf13-vim3 -L)
 
 编辑`/etc/vim/vimrc.local`，添加如下内容
 
-```
+```vim
 source /usr/share/vim/vim81/defaults.vim
 let skip_defaults_vim = 1
 if has('mouse')

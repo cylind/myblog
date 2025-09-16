@@ -12,7 +12,7 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
 ## 标题
 
-```
+```markdown
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -41,7 +41,7 @@ Markdown 是一种轻量级标记语言，它允许人们使用易读易写的�
 
 注意等号后面不要接空格。markdown语法下的高亮以及上下标功能在这个博客上没有显示出来，实际上本地Markdown软件是可以显示出来的。
 
-```
+```markdown
 markdown语法：
 ==字体高亮==
 
@@ -55,7 +55,7 @@ html标签：
 
 ### 上标下标
 
-```
+```markdown
 markdown语法：
 上标用^ ^包围
 2^2^
@@ -111,7 +111,7 @@ H<sub>2</sub>O
 
 ` ![图片底部要显示的文本](link "图片标题")`  其中的link可以是超链接也可以是本地文件路径，绝对路径相、对路径都可以。
 
-```
+```markdown
  ![Markdown基本语法](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/643065-907bae9afdec50d7.png  "markdown语法表")
 ```
 
@@ -121,7 +121,7 @@ H<sub>2</sub>O
 
 ` [text](link)`
 
-```
+```markdown
 [🔗简书markdown语法](https://www.jianshu.com/p/191d1e21f7ed)
 ```
 
@@ -169,7 +169,7 @@ H<sub>2</sub>O
 
 #### 块状
 
-```
+```markdown
 块状数学公式
 $$
 ∑i=110f(i)
@@ -184,7 +184,7 @@ $$
 
 ### 待办事项
 
-```
+```markdown
 - [x] 支持以 PDF 格式导出文稿
 - [x] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
 - [x] 新增 Todo 列表功能
@@ -204,7 +204,7 @@ $$
 
 不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。目前支持的 HTML 元素有：`<mark> <kbd> <b> <i> <em> <sup> <sub> <br>`等 ，如：
 
-```
+```html
 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 ```
 

@@ -105,9 +105,9 @@ script标签用于定义客户端脚本，比如 JavaScript。script元素既可
 
 代码：
 
-```
-<script 
-type="text/javascript" 
+```html
+<script
+type="text/javascript"
 src="http://www.xiami.com/widget/player-single?uid=32329501&sid=1776238762&mode=js"></script>
 ```
 

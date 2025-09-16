@@ -36,7 +36,7 @@ apt install certbot
 
 然后，申请证书（注意，这一步要用到443端口，确认当前443端口没有被占用）：
 
-```
+```bash
 certbot certonly --standalone -d yourDomain.com
 ```
 
@@ -78,7 +78,7 @@ nano ~/trojan-go/example/client.json
 
 如果想使用websocket的话，还要额外加上：
 
-```
+```json
 "websocket": {
     "enabled": true,
     "path": "/ws_path",
@@ -123,7 +123,7 @@ nano ~/trojan-go/example/client.json
 
 client端：
 
-```
+```json
 {
     "run_type": "client",
     "local_addr": "127.0.0.1",
@@ -167,7 +167,7 @@ client端：
 
 ### server端：
 
-```
+```bash
 cd ~/trojan-go
 nohup ./trojan-go -config ./example/server.json &
 ```
@@ -178,7 +178,7 @@ nohup ./trojan-go -config ./example/server.json &
 
 这里以Windows举例，先到[Trojan-Go release页面](https://github.com/p4gefau1t/trojan-go/releases) 下载Windows下的客户端，解压，然后把刚才的client.json配置文件下载下来，放到里面，接着新建一个`start.cmd`批处理脚本，写入如下内容：
 
-```
+```bash
 trojan-go.exe -config client.json
 ```
 

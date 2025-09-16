@@ -13,7 +13,7 @@ java俺也只是略有了解，不常用，做个笔记备忘，说不定以后�
   ## 输入输出
 
 * 输入：  
-```
+```java
  import java.util.Scanner;
 public class Practice {
     public static void main(String[] args) {
@@ -25,16 +25,16 @@ public class Practice {
 }
 ```
  若要输入字符串则直接用i.next() or i.nxetLine()
-  ```
-  next():
-1.一定要读取到有效字符后才可以结束输入。
-2.对输入有效字符之前遇到的空白，next()方法会自动将其去掉。
-3.只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-4.next()不能得到带有空格的字符串。
-
-nextLine()：
-1.以Enter为结束符,nextLine()方法返回的是输入回车之前的所有字符。  
-2.可以获得空白。
+  ```text
+    next():
+  1.一定要读取到有效字符后才可以结束输入。
+  2.对输入有效字符之前遇到的空白，next()方法会自动将其去掉。
+  3.只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
+  4.next()不能得到带有空格的字符串。
+  
+  nextLine()：
+  1.以Enter为结束符,nextLine()方法返回的是输入回车之前的所有字符。
+  2.可以获得空白。
   ```
 * 输出:  
   (1) print将它的参数显示在命令窗口，并将输出光标定位在所显示的最后一个字符之后。  
@@ -123,11 +123,11 @@ nextLine()：
 }`
    
 *  
-    ```
-    if(布尔表达式 1){//如果布尔表达式 1的值为true执行代码}
-    else if(布尔表达式 2){//如果布尔表达式 2的值为true执行代码}
-    else if(布尔表达式 3){//如果布尔表达式 3的值为true执行代码}
-    else {//如果以上布尔表达式都不为true执行代码} 
+    ```java
+        if(布尔表达式 1){//如果布尔表达式 1的值为true执行代码}
+        else if(布尔表达式 2){//如果布尔表达式 2的值为true执行代码}
+        else if(布尔表达式 3){//如果布尔表达式 3的值为true执行代码}
+        else {//如果以上布尔表达式都不为true执行代码}
     ```
     
 * 嵌套的 if…else 语句
@@ -136,18 +136,18 @@ nextLine()：
 
 ### switch case 语句
 
- ```
- switch(expression){
-    case value :
-       //语句
-       break; //可选
-    case value :
-       //语句
-       break; //可选
-    //你可以有任意数量的case语句
-    default : //可选， 无case匹配时默认执行
-       //语句
-}
+ ```java
+  switch(expression){
+     case value :
+        //语句
+        break; //可选
+     case value :
+        //语句
+        break; //可选
+     //你可以有任意数量的case语句
+     default : //可选， 无case匹配时默认执行
+        //语句
+ }
  ```
  (1) switch 语句中的变量类型可以是： byte、short、int 或者 char。从 Java SE 7 开始，switch 支持字符串 String 类型了，同时 case 标签必须为字符串常量或字面量。  
  (2) 当变量的值与 case 语句的值相等时，那么 case 语句之后的语句开始执行，直到 break 语句出现才会跳出 switch 语句。
@@ -205,7 +205,9 @@ nextLine()：
   
   * 初始化语法:
   
-          ```double[][] matrix = {{1,2,3},{4,5,6},{7,8,9}}```
+          ```java
+    double[][] matrix = {{1,2,3},{4,5,6},{7,8,9}}
+    ```
 
   #### 多维数组
 

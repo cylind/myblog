@@ -12,7 +12,7 @@ multipart_fromdata将要传输的内容分为多个部分，各部分内容用�
 
 具体形式如下：
 
-```
+```http
 -----------------------------Separator-character
 Content-Disposition: form-data; name="part1"
 

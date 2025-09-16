@@ -181,7 +181,7 @@ service nginx start
 
 若是服务器上已经搭建有了一个网站，只需要在该网站的Nginx配置文件里添加一个如下location即可:
 
-```
+```nginx
 location /ws_path {
     if ($http_upgrade != "websocket") {
         return 404;

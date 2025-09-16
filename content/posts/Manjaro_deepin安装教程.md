@@ -184,7 +184,7 @@ Linux作为一款开源的操作系统，对比于闭源的Windows或MacOS，它
 
 1. 安装mac风格图标。
 
-   ```
+   ```bash
    yay -S la-capitaine-icon-theme ##然后在deepin控制器的主题项选中它
    ```
 
