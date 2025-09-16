@@ -15,7 +15,7 @@ Trojan-Go可以说是集成了Trojan-gfw和V2ray的优点吧，简单如trojan-g
 
 先到[Trojan-Go release页面](https://github.com/p4gefau1t/trojan-go/releases) 下载最新的预编译包，然后解压：
 
-```shell
+```bash
 mkdir trojan-go
 cd trojan-go
 wget https://github.com/p4gefau1t/trojan-go/releases/download/v0.7.8/trojan-go-linux-amd64.zip
@@ -30,7 +30,7 @@ unzip trojan-go-linux-amd64.zip
 
 这里我们用`certbot`来申请证书，首先安装`certbot`:
 
-```shell
+```bash
 apt install certbot
 ```
 
@@ -44,13 +44,13 @@ certbot certonly --standalone -d yourDomain.com
 
 Let’s Encrypt 提供的证书只有90天的有效期，我们必须在证书到期之前，重新获取这些证书，证书更新命令是(同样的，执行证书更新是要用到443端口，请确保443端口没有被占用)：
 
-```shell
+```bash
 certbot renew --dry-run
 ```
 
 为了方便，可以利用linux下的crontab做一个定时任务，每两月自动更新一次证书：
 
-```shell
+```bash
 0 3 * */2 * certbot renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 ```
 
@@ -71,7 +71,7 @@ service start nginx
 
 可以直接修改开发者给出的范例文件，把域名，密码改成自己想设置的：
 
-```shell
+```bash
 nano ~/trojan-go/example/server.json
 nano ~/trojan-go/example/client.json
 ```

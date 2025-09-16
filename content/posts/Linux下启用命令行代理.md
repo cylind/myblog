@@ -21,7 +21,7 @@ v2ray是不区分客户端和服务端版本的，安装v2ray后，我们通过�
 
 安装方法多种多样，这里介绍通过官方提供的脚本一键式安装的方法：
 
-```shell
+```bash
 wget https://install.direct/go.sh
 sudo bash go.sh
 ```

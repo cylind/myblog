@@ -15,7 +15,7 @@ v2ray是不区分客户端和服务端版本的，安装v2ray后，我们通过�
 
 安装方法多种多样，这里介绍通过官方提供的脚本一键式安装的方法：
 
-```shell
+```bash
 wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
 chmod +x ./install-release.sh
 ./install-release.sh
@@ -25,7 +25,7 @@ chmod +x ./install-release.sh
 
 开启和关闭v2ray的简单指令如下：
 
-```shell
+```bash
 service v2ray start
 service v2ray stop
 service v2ray restart
@@ -41,7 +41,7 @@ service v2ray reload
 
 这里我们用`certbot`来申请证书，首先安装`certbot`:
 
-```shell
+```bash
 apt install certbot
 ```
 
@@ -55,13 +55,13 @@ certbot certonly --standalone -d yourDomain.com
 
 Let’s Encrypt 提供的证书只有90天的有效期，我们必须在证书到期之前，重新获取这些证书，证书更新命令是(同样的，执行证书更新是要用到443端口，请确保443端口没有被占用)：
 
-```shell
+```bash
 certbot renew --dry-run
 ```
 
 为了方便，可以利用linux下的crontab做一个定时任务，每两月自动更新一次证书：
 
-```shell
+```bash
 0 3 * */2 * certbot renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 ```
 

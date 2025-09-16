@@ -13,7 +13,7 @@ Git是一个分布式版本控制系统，可以记录仓库中所有文件的�
 
 ### 设置基本信息
 
-```shell
+```bash
 $ git config --global user.name "<用户名>"
 $ git config --global user.email "<电子邮件>"
 $ git config --global color.ui auto
@@ -21,7 +21,7 @@ $ git config --global color.ui auto
 
 ### 初始化Git仓库
 
-```shell
+```bash
 $ git init
 ```
 
@@ -29,7 +29,7 @@ $ git init
 
 ### 查看Git仓库的状态
 
-```shell
+```bash
 $ git status
 ```
 
@@ -37,13 +37,13 @@ $ git status
 
 提交文件前，先要要把文件添加到暂存区（stage）。可以通过`add` 指令将文件添加至暂存区，`add` 指令可一次添加多个文件，文件名用空格分隔。
 
-```shell
+```bash
 $ git add <file>..
 ```
 
 还可以通过指定`.`参数，一次添加所有文件
 
-```shell
+```bash
 $ git add .
 ```
 
@@ -51,7 +51,7 @@ $ git add .
 
 文件添加到暂存区后，可以通过`commit`指令将文件提交到当前分支
 
-```shell
+```bash
 $ git commit -m "first commit"
 ```
 
@@ -78,7 +78,7 @@ git checkout -b bugfix
 
 将HEAD切换回master(HEAD就是指向commit的指针，可通过checkout更改它指向的位置)，然后执行合并分支，将会在master之后产生一个同时指向bugfix和master的commit，然后master移动至该commit，合并完成。
 
-```shell
+```bash
 git checkout master
 git merge bugfix
 ```
@@ -87,13 +87,13 @@ git merge bugfix
 
 rebase可将两分支合并表示为一条时间线，比较直观。将HEAD切换到bugfix，然后执行合并分支，这将会
 
-```shell
+```bash
 git checkout bugfix
 ```
 
 ![](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/b644568a48e37c6c63dac789e0715c55.png)
 
-```shell
+```bash
 git rebase main
 ```
 
@@ -101,7 +101,7 @@ git rebase main
 
 ### 查看日志
 
-```shell
+```bash
 $ git log
 ```
 
@@ -109,25 +109,25 @@ $ git log
 
 版本回退可以先通过git log 参看commit的时间线，确定回退到那个commit，确定后执行
 
-```shell
+```bash
 git reset --hard 360dcc9 #此为commit id 可不必写全
 ```
 
 要是平时commit时没有写有关键的说明，可能你不知道要回退到哪个版本合适（所以说平时提交commit时一定要注意这一点），这时候可以一个个commit往后找，先签出源码
 
-```shell
+```bash
 git checkout 360dcc9
 ```
 
 查看代码是不是符合你想回退的版本，如果不是，则继续签出下一个；如果是的话，先签出回当前分支代码，假设当前分支为master
 
-```shell
+```bash
 git checkout master
 ```
 
 再进行回退
 
-```shell
+```bash
 git reset --hard 360dcc9
 ```
 
@@ -135,7 +135,7 @@ git reset --hard 360dcc9
 
 ### 关联远程仓库
 
-```shell
+```bash
 $ git remote add <name> <url>
 ```
 
@@ -145,13 +145,13 @@ $ git remote add <name> <url>
 
 使用push命令向数据库推送更改内容。`<repository>`处输入目标地址，如果只有一个追踪分支，`<repository>`缺省；`<refspec>`处指定推送的分支，缺省则默认等前分支。
 
-```shell
+```bash
 $ git push <repository> <refspec>...
 ```
 
 如果当前分支与多个主机存在追踪关系，那么这个时候**-u选项（--set-upstream）**会指定一个默认主机，这样后面就可以不加任何参数使用git push。
 
-```shell
+```bash
 $ git push -u origin master
 ```
 
@@ -161,7 +161,7 @@ $ git push -u origin master
 
 使用pull指令进行拉取操作。省略数据库名称的话，会在名为origin的数据库进行pull。
 
-```shell
+```bash
 $ git pull <repository> <refspec>...
 ```
 

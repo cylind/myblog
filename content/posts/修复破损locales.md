@@ -14,7 +14,7 @@ tags: Linux
 
 苦心人天不负，一番苦苦搜寻，我终于找到解决方法了。
 
-```shell
+```bash
 # 先完全卸载
 sudo apt-get purge locales
 sudo apt-get purge language-pack-zh-hans

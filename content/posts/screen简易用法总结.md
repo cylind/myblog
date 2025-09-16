@@ -31,7 +31,7 @@ screen是一个非常实用的工具，提供从单个 SSH 会话（或本地会
 
 可以输入`screen -ls`查看当前所有的screen会话，例如：
 
-```shell
+```bash
 screen -ls
 
 There are screens on:

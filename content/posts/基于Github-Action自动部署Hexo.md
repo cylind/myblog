@@ -37,7 +37,7 @@ deploy:
 
 进入在本地Hexo博客文件夹下，先去除一些不必要的文件和文件夹，如`.deploy_git`，因为这些文件在部署的时候都会重新生成一遍，所以没必要保留。 以后在本地调试只需要执行`hexo s`即可，没有必要在本地生成html。
 
-```shell
+```bash
 hexo clean
 rm -rf .deploy_git
 ```
@@ -46,7 +46,7 @@ rm -rf .deploy_git
 
 然后，执行如下命令，初始化本地Git仓库并与Github上的远程仓库想关联。
 
-```shell
+```bash
 git init
 git add .
 git commit -m "init git"
@@ -58,7 +58,7 @@ git push -u origin main
 
 执行如下命令来生存ssh密钥对
 
-```shell
+```bash
 ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key -N ""
 ```
 
@@ -85,7 +85,7 @@ ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key -N ""
 
 在 `blog` 仓库根目录下创建 `.github/workflows/deploy.yml` 文件，目录结构如下。
 
-```shell
+```bash
 blog (repository)
 └── .github
     └── workflows
@@ -142,13 +142,13 @@ jobs:
 
 设置好上面的配置文件后，要先将其更新到本地Git仓库，不然会因为冲突而无法push，因为远程仓库添加了新文件。更新只需在本地Hexo博客文件夹执行pull更新即可
 
-```shell
+```bash
 git pull
 ```
 
 然后，随便生成一篇新文章并push到Github上
 
-```shell
+```bash
 hexo new my_new_post
 git add .
 git commit -m "new post"

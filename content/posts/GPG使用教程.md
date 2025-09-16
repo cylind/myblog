@@ -21,7 +21,7 @@ tags: GPG
 
 不太熟悉命令行操作的可以使用`seahorse`作为GUI管理工具，Linux Mint自带该工具，方便平时管理。但它有个缺点导入密钥貌似有bug，导入不了，得出命令行下导入。
 
-```shell
+```bash
 $ sudo apt update && sudo apt install gpg seahorse -y
 ```
 
@@ -69,7 +69,7 @@ gpg --verify file.ext.asc file.ext
 
 查看当前私钥，并决定备份那一个
 
-```shell
+```bash
 $ gpg --list-secret-keys --keyid-format LONG
 /home/chan/.gnupg/pubring.kbx
 -----------------------------
@@ -81,7 +81,7 @@ ssb   rsa4096/46314546EE607336 2021-01-28 [E]
 
 导出GPG私钥（私钥已经包含公钥）
 
-```shell
+```bash
 $ gpg -o private.gpg --export-options backup --export-secret-keys chenyulin775@gmail.com
 ```
 
@@ -93,7 +93,7 @@ $ gpg -o private.gpg --export-options backup --export-secret-keys chenyulin775@g
 
 导入私钥
 
-```shell
+```bash
 $ gpg --import-options restore --import private.gpg
 ```
 
@@ -101,7 +101,7 @@ $ gpg --import-options restore --import private.gpg
 
 同样的，如果私钥设置有保护口令的话，还会弹出一个提示窗口让你输入口令，才能完成导入。导入密钥后还要设置密钥的信任状态
 
-```shell
+```bash
 $ gpg --edit-key chris@seagul.co.uk trust quit
 ```
 

@@ -13,37 +13,37 @@ date: 2020-10-13 12:55:25
 
 更改密码:
 
-```shell
+```bash
 passwd
 ```
 
 更新系统:
 
-```shell
+```bash
 apt update && apt full-upgrade -y && apt autoremove -y
 ```
 
 安装常用软件：
 
-```
+```bash
 apt install sudo wget curl htop vim git ffmpeg aria2 zsh zip unzip man npm nodejs speedtest-cli python3 python3-pip ufw fail2ban certbot nginx -y
 ```
 
 安装python3常用库：
 
-```
+```bash
 pip3 install requests bs4 lxml python-telegram-bot you-get youtube-dl gdown m3u8downloader fake_useragent faker pyexecjs
 ```
 
 添加新用户：
 
-```
+```bash
 adduser chan
 ```
 
 将新用户添加至sudo组：
 
-```
+```bash
 usermod -aG sudo chan
 ```
 
@@ -53,25 +53,25 @@ usermod -aG sudo chan
 
 修改ssh配置文件
 
-```
+```bash
 vim /etc/ssh/sshd_config
 ```
 
 修改ssh端口：
 
-```
+```bash
 Port 2333
 ```
 
 禁止root远程登录：
 
-```
+```bash
 PermitRootLogin no
 ```
 
 安装fail2ban防ssh爆破：
 
-```
+```bash
 cd /etc/fail2ban
 cp jail.conf jail.local
 nano jail.local
@@ -83,7 +83,7 @@ sshd处加上 enabled = true，并将所有默认ssh端口为2333
 
 开启防火墙，仅放行ssh端口
 
-```
+```bash
 ufw allow 2333
 ufw enable
 ```
@@ -145,7 +145,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 #### 安装spf13-vim
 
-```shell
+```bash
 sh <(curl https://j.mp/spf13-vim3 -L)
 ```
 
@@ -171,29 +171,29 @@ endif
 """"""""""""""""""""""
 map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
-	exec "w"
-	if &filetype == 'c'
-		exec "!g++ % -o %<"
-		exec "!time ./%<"
-	elseif &filetype == 'cpp'
-		exec "!g++ % -o %<"
-		exec "!time ./%<"
-	elseif &filetype == 'java'
-		exec "!javac %"
-		exec "!time java %<"
-	elseif &filetype == 'sh'
-		:!time bash %
-	elseif &filetype == 'python'
-		exec "!time python2.7 %"
-	elseif &filetype == 'html'
-		exec "!firefox % &"
-	elseif &filetype == 'go'
+    exec "w"
+    if &filetype == 'c'
+        exec "!g++ % -o %<"
+        exec "!time ./%<"
+    elseif &filetype == 'cpp'
+        exec "!g++ % -o %<"
+        exec "!time ./%<"
+    elseif &filetype == 'java'
+        exec "!javac %"
+        exec "!time java %<"
+    elseif &filetype == 'sh'
+        :!time bash %
+    elseif &filetype == 'python'
+        exec "!time python2.7 %"
+    elseif &filetype == 'html'
+        exec "!firefox % &"
+    elseif &filetype == 'go'
         exec "!go build %<"
-		exec "!time go run %"
-	elseif &filetype == 'mkd'
-		exec "!~/.vim/markdown.pl % > %.html &"
-		exec "!firefox %.html &"
-	endif
+        exec "!time go run %"
+    elseif &filetype == 'mkd'
+        exec "!~/.vim/markdown.pl % > %.html &"
+        exec "!firefox %.html &"
+    endif
 endfunc
 ```
 

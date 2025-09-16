@@ -12,13 +12,13 @@ Goole Cloud Shell真是不错，配置高，性能好，唯一的缺点是会话
 
 htop和tmux貌似都是预装在GCS分配的虚拟机上的，如果没有就执行如下命令安装
 
-```shell
+```bash
 sudo apt install htop tmux -y
 ```
 
 然后利用tmux将终端分屏
 
-```shell
+```bash
 tmux split-window -h
 ```
 
@@ -26,7 +26,7 @@ tmux split-window -h
 
 接着，运行htop，很简单
 
-```shell
+```bash
 htop
 ```
 

@@ -9,7 +9,7 @@ tags: Hexo
 
 首先，要在Github上设置有本地Linux的SSH公钥。具体设置过程见Github官方教程，大体操作如下,先生成SSH密钥对
 
-```shell
+```bash
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
 $ eval "$(ssh-agent -s)"
 > ssh-add ~/.ssh/id_ed25519
@@ -17,7 +17,7 @@ $ eval "$(ssh-agent -s)"
 
 并将生成的公钥复制保存到Github的SSH密钥设置里
 
-```shell
+```bash
 $ sudo apt-get install xclip
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
 
@@ -75,7 +75,7 @@ git clone https://github.com/next-theme/hexo-theme-next
 
 一般要配合开发者调试工具进行样式修改，可先定位css的类名，再在主题文件夹下查找目标类名字符串
 
-```shell
+```bash
 grep -rn "class_name" *
 ```
 
