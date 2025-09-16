@@ -47,7 +47,7 @@ $ git add <file>..
 $ git add .
 ```
 
-![工作区和版本库](https://www.liaoxuefeng.com/files/attachments/919020037470528/0)
+![工作区和版本库](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/20250916204921986.png)
 
 文件添加到暂存区后，可以通过`commit`指令将文件提交到当前分支
 
@@ -91,13 +91,13 @@ rebase可将两分支合并表示为一条时间线，比较直观。将HEAD切�
 git checkout bugfix
 ```
 
-![](http://p.ananas.chaoxing.com/star3/origin/b644568a48e37c6c63dac789e0715c55.png)
+![](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/b644568a48e37c6c63dac789e0715c55.png)
 
 ```shell
 git rebase main
 ```
 
-![](http://p.ananas.chaoxing.com/star3/origin/4e4432d35a0cb263a1371420e73ede78.png)
+![](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/20250916204527786.png)
 
 ### 查看日志
 
@@ -173,7 +173,7 @@ $ git pull <repository> <refspec>...
 
 如果远程数据库和本地数据库的同一个地方都发生了修改的情况下，因为无法自动判断要选用哪一个修改，所以就会发生冲突。
 
-![冲突](https://backlog.com/git-tutorial/cn/img/post/intro/capture_intro5_1_3.png)
+![冲突](https://raw.githubusercontent.com/cylind/cylind.github.io/static/img/01.png)
 
 ==分割线上方是本地数据库的内容, 下方是远程数据库的内容。
 
