@@ -1,0 +1,3 @@
+[submodule "themes/zola-futu"]
+	path = themes/zola-futu
+	url = https://github.com/inhzus/zola-futu
