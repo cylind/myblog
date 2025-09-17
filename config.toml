@@ -30,3 +30,9 @@ url = "@/posts/_index.md"
 [[extra.nav]]
 name = "About"
 url = "@/about/_index.md"
+
+[extra.giscus]
+repo = "cylind/cylind.github.io"
+repoId = "MDEwOlJlcG9zaXRvcnkzMDIyMjI4NjY="
+category = "General"
+categoryId = "DIC_kwDOEgOOEs4CvjAr"
